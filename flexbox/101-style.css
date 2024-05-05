@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box1 {
+    background-color: #ff0000; /* Custom color for Box 1 */
+  }
+  
+  .box2 {
+    background-color: #00ff00; /* Custom color for Box 2 */
+  }
+  
+  .box3 {
+    background-color: #0000ff; /* Custom color for Box 3 */
+  }
+  
+  .box4 {
+    background-color: #ffff00; /* Custom color for Box 4 */
+  }
+  
+  .box5 {
+    background-color: #ff00ff; /* Custom color for Box 5 */
+  }
