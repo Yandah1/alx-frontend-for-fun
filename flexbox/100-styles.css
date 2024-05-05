@@ -192,7 +192,7 @@ template {
 }
 
 /* Variables
-   ============================= */
+ ============================= */
 
 :root {
   --color-primary: #D73953;
@@ -270,7 +270,7 @@ template {
 }
 
 /* Base
-      ============================= */
+    ============================= */
 
 *,
 *:before,
@@ -336,7 +336,7 @@ a:active {
 }
 
 /* Helpers
-      ============================= */
+    ============================= */
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;
@@ -350,7 +350,7 @@ a:active {
 /*** 2. LAYOUT ***/
 
 /* Layout
-      ============================= */
+    ============================= */
 
 .container {
   width: 960px;
@@ -359,7 +359,7 @@ a:active {
 }
 
 /* Grid
-      ============================= */
+    ============================= */
 
 ul.row {
   margin: -1rem;
@@ -384,7 +384,7 @@ ul.row {
 }
 
 /* Navbar
-      ============================= */
+    ============================= */
 .nav {
   display: flex;
   margin: 0;
@@ -400,7 +400,7 @@ ul.row {
   letter-spacing: var(--nav-item-letter-spacing);
 }
 
-.nav .nav-item+.nav-item {
+.nav .nav-item + .nav-item {
   margin: var(--nav-item-margin);
 }
 
@@ -432,7 +432,7 @@ ul.row {
 }
 
 /* Header
-      ============================= */
+    ============================= */
 
 .header {
   padding: var(--header-padding);
@@ -448,7 +448,7 @@ ul.row {
 }
 
 /* Footer
-      ============================= */
+    ============================= */
 
 .footer {
   --nav-item-font-weight: normal;
@@ -481,7 +481,7 @@ ul.row {
 /*** 3. SECTION ***/
 
 /* Section (all styles)
-      ============================= */
+    ============================= */
 
 .section {
   padding: var(--section-padding);
@@ -518,7 +518,7 @@ ul.row {
 }
 
 /* Section theming
-      ============================= */
+    ============================= */
 
 [data-section-theme="dark"] {
   --button-color: var(--color-white);
@@ -528,7 +528,7 @@ ul.row {
 }
 
 /* Section HERO
-      ============================= */
+    ============================= */
 
 .section-hero {
   position: relative;
@@ -573,7 +573,7 @@ ul.row {
   flex-wrap: wrap;
 }
 
-/* Section ABOUT US ============= */
+/* Section ABOUT US */
 .section-about-us [class^="col-"] {
   align-self: center;
 }
@@ -581,14 +581,14 @@ ul.row {
 /*** 4. CARD ***/
 
 /* Card (all styles)
-      ============================= */
+    ============================= */
 
 .card-category {
   color: var(--color-primary);
 }
 
 /* Card WORK
-      ============================= */
+    ============================= */
 
 .card-work .card-outer {
   position: relative;
@@ -653,7 +653,7 @@ ul.row {
 }
 
 /* Card SERVICES
-      ============================= */
+    ============================= */
 
 .card-services .card-title {
   margin: 0;
@@ -674,7 +674,7 @@ ul.row {
 }
 
 /* Card TESTIMONIAL
-      ============================= */
+    ============================= */
 
 .card-testimonial {
   text-align: center;
@@ -708,7 +708,7 @@ ul.row {
 
 /*** ARTICLE PAGE ***/
 /* Section HERO (article)
-    ============================= */
+  ============================= */
 
 .hero-article {
   background-size: 150rem 100rem;
@@ -743,32 +743,13 @@ ul.row {
 }
 
 /* Post
-    ============================= */
-
+  ============================= */
 .post {
   display: flex;
 }
 
-.post .img  {
-  width: 100%;
-  height: auto;
-}
-
 .post-content {
   width: 100%;
-}
-
-
-.post-content > p:first-child {
-  font-size: var(--font-size-x-large);
-}
-
-.post-content .img-caption {
-  margin: 1rem 0;
-  padding: 0 .5rem;
-  font-size: var(--font-size-small);
-  color: var(--color-grey, #a0a0a0);
-  text-align: center;
 }
 
 .post-aside {
@@ -776,8 +757,26 @@ ul.row {
   min-width: 20%;
 }
 
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content p:first-child {
+  font-size: var(--font-size-x-large);
+}
+
+.post-content .img-caption {
+  margin: 1rem 0;
+  padding: 0 .5rem;
+  font-size: var(--font-size-small);
+  color: var(--color-grey);
+  text-align: center;
+}
+
 /* Post Meta
-    ============================= */
+  ============================= */
 .post-meta-list {
   flex-direction: column;
 }
@@ -801,7 +800,7 @@ ul.row {
 }
 
 /* Tag list
-    ============================= */
+  ============================= */
 .tag-list {
   padding: 0;
   list-style: none;
